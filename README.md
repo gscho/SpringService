@@ -1,2 +1,4 @@
-# SpringService
-Cookbook for setting up your Spring boot application as a init.d or systemd Service.
+# indellient_spring_service
+
+TODO: Enter the cookbook description here.
+
