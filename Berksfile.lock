@@ -1,0 +1,7 @@
+DEPENDENCIES
+  spring_service
+    path: .
+    metadata: true
+
+GRAPH
+  spring_service (0.1.0)
