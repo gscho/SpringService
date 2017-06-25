@@ -1,6 +1,9 @@
-language: ruby
-gemfile:
-   - Gemfile
-rvm:
-  - 2.0.0
-script: rspec
+sudo: required
+dist: trusty
+addons:
+  apt:
+    sources:
+      - chef-stable-trusty
+    packages:
+      - chefdk
+script: chef exec rspec
