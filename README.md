@@ -1,4 +1,4 @@
-# indellient_spring_service
+# SpringService
 
 TODO: Enter the cookbook description here.
 
