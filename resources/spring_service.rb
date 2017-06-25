@@ -9,7 +9,7 @@ resource_name 'spring_service'
 
 action :default do
 
-  artifact_name = File.basename(artifact, File.extname(artifact))
+  artifact_name = ::File.basename(artifact, ::File.extname(artifact))
   
   link "#{artifact_directory}/#{artifact}" do
     to "/etc/init.d/#{artifact_name}"
@@ -23,7 +23,7 @@ action :default do
     variables({
       :v => java_opts
     })
-    not_if java_opts.nil?
+    not_if { java_opts.nil? }
   end
 
 end

@@ -18,4 +18,4 @@ version '0.1.0'
 #
 # source_url 'https://github.com/<insert_org_here>/spring_service_test' if respond_to?(:source_url)
 
-depends "spring_service"
+depends 'spring_service'

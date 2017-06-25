@@ -9,8 +9,8 @@ require 'spec_helper'
 describe 'spring_service::default' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
-      ChefSpec::Runner.new(cookbook_path: %w(./test/cookbooks), step_into: ['spring_service']) do |node|
-      end.converge(described_recipe)
+      ChefSpec::SoloRunner.new(step_into: ['spring_service'], cookbook_path: ['./test/cookbooks', '../'], platform: 'centos', version: '6.7') do |node|
+      end.converge('spring_service_test::default')
     end
 
     it 'converges successfully' do
