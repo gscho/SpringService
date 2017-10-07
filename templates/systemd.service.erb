@@ -1,0 +1,11 @@
+[Unit]
+Description=<%= desc -%>
+After=syslog.target
+
+[Service]
+User=<%= user -%>
+ExecStart=/var<%= exec_start -%>
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

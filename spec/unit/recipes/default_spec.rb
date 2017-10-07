@@ -26,8 +26,8 @@ describe 'spring_service::default' do
     end
 
     it 'creates a template with the default action' do
-	  expect(chef_run).to create_template('/testdir/test.conf').with(mode: 755)
-	end
+	    expect(chef_run).to create_template('/testdir/test.conf').with(mode: 755)
+	  end
 
   end
 end

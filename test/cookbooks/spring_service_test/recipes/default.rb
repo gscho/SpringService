@@ -8,4 +8,5 @@ spring_service 'test' do
 	artifact_directory '/testdir'
 	artifact 'test.jar'
 	java_opts '-xmx512m'
+	service_type 'init.d'
 end

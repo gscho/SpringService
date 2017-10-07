@@ -1,0 +1,6 @@
+# Chef
+.kitchen
+.delivery
+
+# MacOS
+.DS_Store
