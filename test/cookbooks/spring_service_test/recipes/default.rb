@@ -5,8 +5,8 @@
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
 spring_service 'test' do
-	artifact_directory '/testdir'
-	artifact 'test.jar'
-	java_opts '-xmx512m'
-	service_type 'init.d'
+  artifact_directory '/testdir'
+  artifact 'test.jar'
+  java_opts '-xmx512m'
+  service_type 'init.d'
 end

@@ -1,6 +1,10 @@
 # Chef
 .kitchen
 .delivery
+Berksfile.lock
 
 # MacOS
 .DS_Store
+
+# ruby
+

@@ -10,5 +10,5 @@ def url(name)
   "https://github.com/gscho/spring_service/#{name}"
 end
 
-issues_url url issues if respond_to?(:issues_url)
-source_url url spring_service if respond_to?(:source_url)
+issues_url url(issues) if respond_to?(:issues_url)
+source_url url(spring_service) if respond_to?(:source_url)
